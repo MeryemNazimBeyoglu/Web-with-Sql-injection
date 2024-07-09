@@ -1,0 +1,73 @@
+: <!DOCTYPE html>
+<html>
+<head>
+<title>Giriş Ekranı</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 20px;
+padding: 20px;
+background-color: #f0f0f0;
+}
+.login-form {
+max-width: 300px;
+margin: auto;
+background: #fff;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+.login-form h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+.login-form label {
+display: block;
+margin-bottom: 10px;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+.login-form input[type="submit"] {
+background-color: #4CAF50;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+}
+.login-form input[type="submit"]:hover {
+background-color: #45a049;
+}
+.message {
+margin-top: 15px;
+padding: 10px;
+border-radius: 3px;
+}
+.message.success {
+background-color: #d4edda;
+border-color: #c3e6cb;
+color: #155724;
+}
+.message.error {
+background-color: #f8d7da;
+border-color: #f5c6cb;
+color: #721c24;
+}
+</style>
+</head>
+<body>
+<div class="login-form">
+<h2>Giriş Yap</h2>
+<form action="" method="POST">
+<label for="username">Kullanıcı Adı:</label><br>
+<input type="text" id="username" name="username" required><br><br>
+<label for="password">Şifre:</label><br>
+<input type="password" id="password" name="password" required><br><br>
+<input type="submit" value="Giriş Yap">
+</form>
