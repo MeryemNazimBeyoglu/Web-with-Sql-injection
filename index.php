@@ -33,7 +33,6 @@
             echo '<div class="message error">Geçersiz kullanıcı adı veya şifre.</div>';
         }
 
-        // Veritabanı bağlantısını kapat
         $conn->close();
     }
     ?>
